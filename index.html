@@ -3,66 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
     <title>Portifólio</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="styles/barraRolagem.css">
-    <link rel="stylesheet" href="assets/fontAwesome/css/all.min.css">
-    <link rel="stylesheet" href="styles/theme.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/responsivo.css">
 </head>
     
-<body>
-    <header class="barraFixa">
-        <div id="logoHeader">
-            <h2>JÚNIOR HOLANDA<br><span class="frontEnd">FRONT END</span></h2>
-        </div>
-        <div class="socialMidia">
-            <i class="fa-brands fa-github iconHeader"></i>
-            <i class="fa-brands fa-linkedin iconHeader"></i>
-            <i class="fa-brands fa-whatsapp iconHeader"></i>
+<body class="container-wrapper">
+    <header class="left-bar">
+        <div class="logo-contact">
+            <div class="logo-header">
+                <h2>JÚNIOR HOLANDA<br><span class="front-end">FRONT END</span></h2>
+            </div>
+            <div class="social-media">
+                <i class="fa-brands fa-github iconHeader"></i>
+                <i class="fa-brands fa-linkedin iconHeader"></i>
+                <i class="fa-brands fa-whatsapp iconHeader"></i>
+            </div>
         </div>
         
-        <div id="theme">
+        <Section class="habililitys">
+            <div class="primary-habilitys">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li class="icon-primary"><i class="fa-brands fa-html5"></i></li>
+                    <li class="icon-primary"><i class="fa-brands fa-css3-alt"></i></li>
+                    <li class="iconj-primary"><i class="fa-brands fa-js"></i></li>
+                    <li class="icon-primary"><i class="fa-brands fa-sass"></i></li>
+                    <li class="icon-primary"><i class="fa-brands fa-figma"></i></li>
+                </ul>
+            </div>
+            
+            <div class="secundary-habilitys">
+                <h2>Outras habilidades</h2>
+                <div class="adobe">
+                    <img class="icon" src="img/icons/iconePhotoshop.png" alt="logo do photoshop">
+                    <img class="icon" src="img/icons/iconeIllustrator.png" alt="logo do Illustrator">
+                    <img class="icon" src="img/icons/icone-after-effects.png" alt="logo do After Effects">
+                </div>
+            </div>            
+        </Section> 
+        <section class="destaques">
+            <h2>Destaques</h2>
+            <div class="card-container-destaque">
+                <div class="img-card-destaque">
+                    <img src="img/icons/teste.png" alt="">
+                </div>
+                <div class="classification">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card-container-destaque">
+                <div class="img-card-destaque">
+                    <img src="img/icons/teste.png" alt="">
+                </div>
+                <div class="classification">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card-container-destaque">
+                <div class="img-card-destaque">
+                    <img src="img/icons/teste.png" alt="">
+                </div>
+                <div class="classification">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+            <div class="card-container-destaque">
+                <div class="img-card-destaque">
+                    <img src="img/icons/teste.png" alt="">
+                </div>
+                <div class="classification">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>Titulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            </div>
+        </section>
+    </header> 
+
+    <main class="content">
+        <section class="sobre">
+            <img src="img/euPortifolio 02.png" alt="Um homem segurando uma camera">  
+            <div id="theme">
                 <input id="chk" class="checkBox"  type="checkbox">
                 <label class="label" for="chk">
                     <i class="fa-solid fa-moon"></i>
                     <i class="fa-solid fa-sun"></i>
                     <div class="ball"></div>
                 </label>
-        </div>
-    </header> 
-
-    <nav class="barra-menu-lateral">
-        <ul>
-            <li>Projeto</li>
-            <li>Projeto</li>
-            <li>Projeto</li>
-        </ul>
-    </nav>
-
-    <Section class="skill">
-        <h2>Habilidades</h2>
-        <ul>
-            <li class="iconHtml"><i class="fa-brands fa-html5"></i></li>
-            <li class="iconCss"><i class="fa-brands fa-css3-alt"></i></li>
-            <li class="iconJs"><i class="fa-brands fa-js"></i></li>
-        </ul>
-        <h3>Outras habilidades</h3>
-        
-        <div class="adobe">
-            <img class="iconAdobe" src="img/icons/iconePhotoshop.png" alt="logo do photoshop">
-            <img class="iconAdobe" src="img/icons/iconeIllustrator.png" alt="logo do Illustrator">
-            <img class="iconAdobe" src="img/icons/icone-after-effects.png" alt="logo do After Effects">
-        </div>
-        
-        <p>Acredito que essas demais habilidades de designer ampliam minhas possibilidades como desenvolvedor front end.</p>
-        
-    </Section>  
-
-    <main class="conteudo">
-        <section class="sobre">
-            <img src="img/euPortifolio 02.png" alt="Um homem segurando uma camera">  
+            </div>
             <h1>.Sobre &#123;</h1>
             <p>
                 Oi, me chamo Júnior Holanda e estou migrando de design para fronte end.
