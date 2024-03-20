@@ -165,24 +165,4 @@
 .left-bar .destaques .card-container-destaque p {
   color: #CCCCCC;
   font-size: 0.8rem;
-}
-
-.content {
-  grid-column: 2/3;
-  display: flex;
-}
-
-.container-wrapper {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 30% 70%;
-  grid-row: auto;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  grid-column: 2/3;
-  display: flex;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=left-bar.css.map */

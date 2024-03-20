@@ -1,0 +1,8 @@
+@use 'utils/variables';
+@use 'utils/global-style';
+@use 'utils/mixin';
+
+.content{
+    grid-column: 2/3;
+    display: flex;
+}

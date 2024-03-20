@@ -1,0 +1,170 @@
+@use 'utils/variables';
+@use 'utils/global-style';
+@use 'utils/mixin';
+
+.left-bar{
+    position: fixed;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: 100vh;
+    padding: 30px;
+    background-color: variables.$color-1;
+
+    
+    .logo-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: variables.$color-5;
+        gap: 10px;
+        height: 20%;
+        .logo-header{
+            height: auto;
+            border-bottom: 3px solid variables.$color-2;
+            h2{
+                font-family: variables.$font-comum;
+                font-size: 1.3vw;
+                padding-bottom: 10px;
+                .front-end{
+                    font-style: italic;
+                    font-size: 1vw;
+                }
+            } 
+        }
+        .social-media {
+            display: flex;
+            font-size: 2rem;
+            gap: 20px;
+        }
+    } 
+    
+    .habililitys{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        height: 40%;
+        .primary-habilitys{
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                @include mixin.font-main;
+            }
+            ul{
+                display: flex;
+                gap: 20px;
+                font-size: 2rem;
+                li{
+                    &:nth-of-type(1){
+                        color: #e34c26; //cor do icone html
+                    }
+                    &:nth-of-type(2){
+                        color:#264de4; //cor do icone css
+                    }
+                    &:nth-of-type(3){
+                        color:  #efd81d; //cor do icone js
+                    }
+                    &:nth-of-type(4){
+                        color:#cc6699; //cor do icone sass
+                    }
+                    &:nth-of-type(5){
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:#ffffff; //cor do icone sass
+                        background-color: #e34c26;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 3px;
+                        font-size: 1vw;
+                    }
+                }
+            }
+        }
+        .secundary-habilitys{
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                @include mixin.font-main;
+            }
+            div{
+                display: flex;
+                gap: 20px;
+                .icon{
+                    width: 30px;
+                }
+            }
+        }
+    } //fim do habilidades
+    .destaques{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 50%;
+        width: 100%;
+        h2 {
+            display: block;
+            @include mixin.font-main;
+        }
+
+        .container-card{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+        }
+        .card-container-destaque{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr 2fr;
+            align-items: center;
+            width: 47%;
+            height: 10vh;
+            gap: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: variables.$color-5;
+            overflow: hidden;
+
+            .img-card-destaque{
+                grid-column: 1/2;
+                grid-row: 1/4;
+                img {
+                    object-fit: cover;
+                    height: 100%;
+                }
+            }
+            .classification{
+                grid-column: 2/3;
+                grid-row: 1/2;
+                display: flex;
+                i{
+                    color: rgb(216, 185, 11);
+                    font-size: .7rem;
+                }
+            }
+            h3{
+                color: variables.$color-6;
+                font-size: .9rem;
+   
+                height: 10px;
+            }
+            p{
+                color: variables.$color-3;
+                font-size: .8rem;
+
+            }
+
+        }//fim card-container-destaque
+    
+    }//fim destaque
+
+
+}//fim left-bar
