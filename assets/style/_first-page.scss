@@ -1,5 +1,6 @@
+@import 'variable';
+
 .first-page {
-    border: solid red;
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -10,26 +11,48 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 40%;
+        width: 22%;
 
-        .card-img {
+        .profile-box {
             z-index: 1;
             display: flex;
-            background-color: aliceblue;
+            background-color: $sixth-color;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 80%;
             padding: 30px;
+            border: solid greenyellow;
 
-            .container-img {
-                border: solid rebeccapurple;
-                overflow: hidden;
-                width: 100%;
-
-                .img-profile {
+            .card-img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: red solid;
+                .container-img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: top;
+                    align-items: center;
+                    overflow: hidden;
                     width: 100%;
-                    max-width: 600px;
+                    height: 100%;
+
+                    .img-profile {
+                        object-fit: contain;
+                        object-position: top;
+                        max-height: 80%;
+                    }
+
+                    .btn-contact-modal {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px;
+                        border: solid red;
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -42,10 +65,9 @@
             align-items: center;
             width: 30%;
             height: 100%;
-            background-color: rgb(35, 31, 53);
+            background-color: $fourth-color;
             color: wheat;
             overflow: hidden;
-
 
             .list-objective {
                 border: solid rgb(0, 238, 255);
@@ -57,10 +79,9 @@
                 flex-wrap: nowrap;
                 transform: rotate(-90deg);
 
-                .objective{
+                .objective {
                     display: flex;
                     flex-wrap: nowrap;
-                    border: solid purple;
                     width: 100px;
                 }
             }

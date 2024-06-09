@@ -1,35 +1,57 @@
 .first-page {
-  border: solid red;
   display: flex;
   width: 100vw;
   height: 100vh;
 }
 .first-page .container-profile-first-page {
   position: relative;
-  background-color: rgb(88, 52, 189);
+  background-color: #7b75ad;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 22%;
 }
-.first-page .container-profile-first-page .card-img {
+.first-page .container-profile-first-page .profile-box {
   z-index: 1;
   display: flex;
-  background-color: aliceblue;
+  background-color: #ffffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 80%;
   padding: 30px;
+  border: solid greenyellow;
 }
-.first-page .container-profile-first-page .card-img .container-img {
-  border: solid rebeccapurple;
+.first-page .container-profile-first-page .profile-box .card-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: red solid;
+}
+.first-page .container-profile-first-page .profile-box .card-img .container-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
   overflow: hidden;
   width: 100%;
+  height: 100%;
 }
-.first-page .container-profile-first-page .card-img .container-img .img-profile {
-  width: 100%;
-  max-width: 600px;
+.first-page .container-profile-first-page .profile-box .card-img .container-img .img-profile {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  max-height: 80%;
+}
+.first-page .container-profile-first-page .profile-box .card-img .container-img .btn-contact-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: solid red;
+  width: 50%;
 }
 .first-page .container-profile-first-page .container-objective {
   position: absolute;
@@ -39,7 +61,7 @@
   align-items: center;
   width: 30%;
   height: 100%;
-  background-color: rgb(38, 24, 100);
+  background-color: #201e27;
   color: wheat;
   overflow: hidden;
 }
@@ -56,7 +78,6 @@
 .first-page .container-profile-first-page .container-objective .list-objective .objective {
   display: flex;
   flex-wrap: nowrap;
-  border: solid purple;
   width: 100px;
 }
 
