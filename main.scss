@@ -1,0 +1,11 @@
+@import 'assets/style/first-page';
+@import 'assets/style/reset';
+@import 'assets/style/variable';
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

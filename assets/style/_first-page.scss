@@ -1,0 +1,69 @@
+.first-page {
+    border: solid red;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    .container-profile-first-page {
+        position: relative;
+        background-color: $first-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+
+        .card-img {
+            z-index: 1;
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            padding: 30px;
+
+            .container-img {
+                border: solid rebeccapurple;
+                overflow: hidden;
+                width: 100%;
+
+                .img-profile {
+                    width: 100%;
+                    max-width: 600px;
+                }
+            }
+        }
+
+        .container-objective {
+            position: absolute;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            height: 100%;
+            background-color: rgb(35, 31, 53);
+            color: wheat;
+            overflow: hidden;
+
+
+            .list-objective {
+                border: solid rgb(0, 238, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                gap: 30px;
+                flex-wrap: nowrap;
+                transform: rotate(-90deg);
+
+                .objective{
+                    display: flex;
+                    flex-wrap: nowrap;
+                    border: solid purple;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
