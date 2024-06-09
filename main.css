@@ -88,6 +88,8 @@
   flex-wrap: nowrap;
   color: #4ed1ad;
   gap: 30px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
   transform: rotate(-90deg);
   width: 100vh;
 }
@@ -263,6 +265,22 @@ input {
     opacity: 1;
   }
 }
+.first-page .dark-container-profile-first-page {
+  background-color: #201e27;
+}
+.first-page .dark-container-profile-first-page .dark-profile-box {
+  background-color: #7b75ad;
+}
+.first-page .dark-container-profile-first-page .dark-container-objective {
+  background-color: #4ed1ad;
+}
+.first-page .dark-container-profile-first-page .dark-container-objective .dark-list-objective {
+  color: #000000;
+}
+.first-page .dark-container-info-first-page {
+  background-color: #000000;
+}
+
 html,
 body,
 main {

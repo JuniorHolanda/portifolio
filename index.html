@@ -3,32 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>portifólio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="main.css" />
         <script type="module" src="script.js" defer></script>
+        <title>portifólio</title>
     </head>
     <body>
         <main>
             <section class="first-page">
-                <div class="container-profile-first-page">
-                    <div class="profile-box">
+                <div class="container-profile-first-page" id="dark-theme-container-profile-first-page">
+                    <div class="profile-box" id="darkProfileBox">
                         <div class="card-img">
                             <div class="container-img">
-                                <!-- prettier-ignore -->
                                 <img class="img-profile"src="assets/img/profile.jpg"alt="imagem de um homem branco sentado em uma praça com uma camera fotográfica na mão"/>
                             </div>
                             <div class="container-btn-contact">
-                                <button
-                                    class="btn-contact-modal"
-                                    id="modalContatos"
-                                >
-                                    contato
-                                </button>
+                                <button class="btn-contact-modal" id="modalContatos">contato</button>
                             </div>
                         </div>
                     </div>
-                    <div class="container-objective">
-                        <ul class="list-objective">
+                    <div class="container-objective" id="darkContainerObjective">
+                        <ul class="list-objective" id="darkListObjective">
                             <li class="objective">FRONT END</li>
                             <li class="objective">FRONT END</li>
                             <li class="objective">FRONT END</li>
@@ -39,12 +34,15 @@
                     </div>
                 </div>
 
-                <div class="container-info-first-page">
-                    <!--prettier-ignore-->
-                    <img class="halftone" src="assets/img/halftone.png" alt="um quadrado feito de vários pontos">
+                <div class="container-info-first-page" id="darkContainerInfoFirstPage">
+                    <img class="halftone" id="darkHalftone" src="assets/img/halftone.png" alt="um quadrado feito de vários pontos">
 
                     <div class="theme">
-                        <input type="checkbox" />
+                        <input type="checkbox" name="btn-theme" id="changeTheme"/>
+                        <label for="changeTheme">
+                            <i class="fa-regular fa-sun"></i>
+                            <i class="fa-regular fa-moon"></i>
+                        </label>
                     </div>
 
                     <div class="sobre">

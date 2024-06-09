@@ -1,0 +1,23 @@
+.first-page{
+    .dark-container-profile-first-page{
+        background-color: $fourth-color;
+    
+        .dark-profile-box{
+        background-color: $first-color;
+        }
+
+        .dark-container-objective{
+            background-color: $second-color;
+
+            .dark-list-objective{
+                color: $tirth-color;
+            }
+        }
+
+    }
+
+    .dark-container-info-first-page{
+        background-color: $tirth-color;
+    }
+
+}

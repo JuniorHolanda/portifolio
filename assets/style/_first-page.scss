@@ -1,5 +1,7 @@
 @import 'variable';
 
+
+//dark theme
 .first-page {
     display: flex;
     width: 100%;
@@ -93,7 +95,8 @@
                 flex-wrap: nowrap;
                 color: $second-color;
                 gap: 30px;
-                //transform: translate(-50%);
+                font-family: $secundary-font;
+                font-weight: 600;
                 transform: rotate(-90deg);
                 width: 100vh;
 
@@ -234,4 +237,5 @@
             }
         }
     }
+    
 }
