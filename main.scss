@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+@import url("https://use.typekit.net/bie6gfv.css");
+
 
 @import 'assets/style/first-page';
 @import 'assets/style/reset';
 @import 'assets/style/variable';
+@import'assets/style/animation';
 
 
 html,
@@ -13,4 +16,5 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }

@@ -1,4 +1,4 @@
-@import'variable';
+@import 'variable';
 
 .first-page {
     display: flex;
@@ -6,14 +6,18 @@
     height: 100vh;
 
     .container-profile-first-page {
+        position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
         width: 25%;
-        border: SOLID RED;
         background-color: $first-color;
 
         .profile-box {
+            z-index: 1;
+            position: absolute;
+            transform: translate(-50%);
+            left: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,6 +25,9 @@
             padding: 40px;
             width: 70%;
             height: auto;
+            opacity: 0;
+
+            animation: entrace-profile 1.3s .5s forwards;
             .card-img {
                 display: flex;
                 flex-direction: column;
@@ -37,24 +44,29 @@
                     width: 100%;
                     overflow: hidden;
 
-                    .img-profile{
+                    .img-profile {
                         width: 100%;
                         object-fit: cover;
                         object-position: center;
                     }
                 }
 
-                .container-btn-contact{
+                .container-btn-contact {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     padding: 20px;
                     width: 100%;
 
-                    .btn-contact-modal{
-                        display: block;
+                    .btn-contact-modal {
+                        display: flex;
+                        width: 50%;
+                        justify-content: center;
+                        align-items: center;
+                        width: auto;
                         border: solid 2px $tirth-color;
-                        font-family: $secundary-Font;
+                        font-family: $secundary-font;
+                        font-size: 1vw;
                         font-style: italic;
                         font-weight: 900;
                         padding: 5px 20px;
@@ -62,11 +74,164 @@
                 }
             }
         }
+
+        .container-objective {
+            right: 0;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 100%;
+            background-color: $fourth-color;
+            //overflow: hidden;
+
+            .list-objective {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                color: $second-color;
+                gap: 30px;
+                //transform: translate(-50%);
+                transform: rotate(-90deg);
+                width: 100vh;
+
+                .objective {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 13vw;
+                    letter-spacing: 2px;
+                }
+            }
+        }
     }
 
     .container-info-first-page {
+        position: relative;
         display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 60px;
         width: 75%;
-        border: SOLID rgb(255, 0, 255);
+        background-color: $fifth-color;
+
+        .halftone {
+            position: absolute;
+            top: 60px;
+            left: 60px;
+        }
+
+        .theme {
+            position: absolute;
+            background-color: red;
+            top: 60px;
+            right: 60px;
+        }
+
+        .sobre {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            z-index: 1;
+            opacity: 0;
+
+            animation: entrace-fade-in-top 1.3s 1s forwards;
+
+            .sobre-title {
+                font-family: $first-font;
+                font-size: 12rem;
+                font-weight: 400;
+            }
+            .sobre-description {
+                margin-left: 30px;
+                padding-left: 30px;
+                border-left: solid $tirth-color;
+                font-family: $secundary-font;
+                font-size: 1rem;
+                line-height: 25px;
+
+                strong {
+                    font-weight: 900;
+                    color: $fourth-color;
+                    background-color: $second-color;
+                }
+            }
+
+            .close-tag {
+                font-family: $first-font;
+                font-size: 12rem;
+                font-weight: 400;
+            }
+        }
+
+        .container-menu-main {
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            height: 40%;
+            width: 30%;
+            text-align: right;
+
+            .menu-main {
+                display: flex;
+                width: 100%;
+                height: 100%;
+
+                .menu-list-main{
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-right: 2px solid;
+                    padding: 30px;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+
+                    animation: entrace-fade-in-botton 1.3s 1.5s forwards;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        right: -9px;
+                        width: 14px;
+                        height: 14px;
+                        border-right: 2px solid;
+                        border-bottom: 2px solid;
+                        transform: rotate(45deg);
+                        
+                    }
+
+                    .menu-item-main{
+                        display: flex;
+                        justify-content: end;
+                        align-items: center;
+                        font-family: $secundary-font;
+                        font-size: 1vw;
+                        font-style: italic;
+                        font-weight: 900;
+                        cursor: pointer;
+                        border-bottom: 2px solid $tirth-color;
+                        height: 100%;
+                        transition: .3s;
+
+                        &:hover{
+                            color: $first-color;
+                            transition: .3;
+                            transform: translateX(-20px);
+                        }
+                    }
+
+                    //remove a borda do ultimo
+                    .menu-item-main:last-child{
+                        border: none;
+                    }
+
+                }
+            }
+        }
     }
 }

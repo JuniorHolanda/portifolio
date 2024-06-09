@@ -1,18 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url("https://use.typekit.net/bie6gfv.css");
 .first-page {
   display: flex;
   width: 100%;
   height: 100vh;
 }
 .first-page .container-profile-first-page {
+  position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   width: 25%;
-  border: SOLID RED;
   background-color: #7b75ad;
 }
 .first-page .container-profile-first-page .profile-box {
+  z-index: 1;
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +25,8 @@
   padding: 40px;
   width: 70%;
   height: auto;
+  opacity: 0;
+  animation: entrace-profile 1.3s 0.5s forwards;
 }
 .first-page .container-profile-first-page .profile-box .card-img {
   display: flex;
@@ -52,17 +59,152 @@
   width: 100%;
 }
 .first-page .container-profile-first-page .profile-box .card-img .container-btn-contact .btn-contact-modal {
-  display: block;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  width: auto;
   border: solid 2px #000000;
   font-family: "JetBrains Mono", monospace;
+  font-size: 1vw;
   font-style: italic;
   font-weight: 900;
   padding: 5px 20px;
 }
-.first-page .container-info-first-page {
+.first-page .container-profile-first-page .container-objective {
+  right: 0;
+  z-index: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  background-color: #201e27;
+}
+.first-page .container-profile-first-page .container-objective .list-objective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: #4ed1ad;
+  gap: 30px;
+  transform: rotate(-90deg);
+  width: 100vh;
+}
+.first-page .container-profile-first-page .container-objective .list-objective .objective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13vw;
+  letter-spacing: 2px;
+}
+.first-page .container-info-first-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 60px;
   width: 75%;
-  border: SOLID rgb(255, 0, 255);
+  background-color: #dddddd;
+}
+.first-page .container-info-first-page .halftone {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+.first-page .container-info-first-page .theme {
+  position: absolute;
+  background-color: red;
+  top: 60px;
+  right: 60px;
+}
+.first-page .container-info-first-page .sobre {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  z-index: 1;
+  opacity: 0;
+  animation: entrace-fade-in-top 1.3s 1s forwards;
+}
+.first-page .container-info-first-page .sobre .sobre-title {
+  font-family: "thrillers", sans-serif;
+  font-size: 12rem;
+  font-weight: 400;
+}
+.first-page .container-info-first-page .sobre .sobre-description {
+  margin-left: 30px;
+  padding-left: 30px;
+  border-left: solid #000000;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+  line-height: 25px;
+}
+.first-page .container-info-first-page .sobre .sobre-description strong {
+  font-weight: 900;
+  color: #201e27;
+  background-color: #4ed1ad;
+}
+.first-page .container-info-first-page .sobre .close-tag {
+  font-family: "thrillers", sans-serif;
+  font-size: 12rem;
+  font-weight: 400;
+}
+.first-page .container-info-first-page .container-menu-main {
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  height: 40%;
+  width: 30%;
+  text-align: right;
+}
+.first-page .container-info-first-page .container-menu-main .menu-main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 2px solid;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: entrace-fade-in-botton 1.3s 1.5s forwards;
+}
+.first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -9px;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+}
+.first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main .menu-item-main {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1vw;
+  font-style: italic;
+  font-weight: 900;
+  cursor: pointer;
+  border-bottom: 2px solid #000000;
+  height: 100%;
+  transition: 0.3s;
+}
+.first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main .menu-item-main:hover {
+  color: #7b75ad;
+  transition: 0.3;
+  transform: translateX(-20px);
+}
+.first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main .menu-item-main:last-child {
+  border: none;
 }
 
 * {
@@ -93,6 +235,34 @@ input {
   background-color: transparent;
 }
 
+@keyframes entrace-fade-in-top {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes entrace-fade-in-botton {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes entrace-profile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 html,
 body,
 main {
@@ -100,4 +270,5 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }/*# sourceMappingURL=main.css.map */

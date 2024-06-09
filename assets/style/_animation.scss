@@ -1,0 +1,31 @@
+@keyframes entrace-fade-in-top {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrace-fade-in-botton {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// usar apenas no profile devido as particularidades do transform
+@keyframes entrace-profile {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
