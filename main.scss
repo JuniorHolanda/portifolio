@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
 @import 'assets/style/first-page';
 @import 'assets/style/reset';
 @import 'assets/style/variable';
 
+
 html,
-body {
+body,
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;

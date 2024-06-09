@@ -1,90 +1,72 @@
-@import 'variable';
+@import'variable';
 
 .first-page {
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     .container-profile-first-page {
-        position: relative;
-        background-color: $first-color;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        width: 22%;
+        align-items: center;
+        width: 25%;
+        border: SOLID RED;
+        background-color: $first-color;
 
         .profile-box {
-            z-index: 1;
             display: flex;
-            background-color: $sixth-color;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 80%;
-            padding: 30px;
-            border: solid greenyellow;
-
+            background-color: $sixth-color;
+            padding: 40px;
+            width: 70%;
+            height: auto;
             .card-img {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: top;
                 align-items: center;
-                border: red solid;
+                width: 100%;
+                height: 100%;
+                border: solid 4px $tirth-color;
+
                 .container-img {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: top;
+                    justify-content: center;
                     align-items: center;
-                    overflow: hidden;
                     width: 100%;
-                    height: 100%;
+                    overflow: hidden;
 
-                    .img-profile {
-                        object-fit: contain;
-                        object-position: top;
-                        max-height: 80%;
-                    }
-
-                    .btn-contact-modal {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 10px;
-                        border: solid red;
-                        width: 50%;
+                    .img-profile{
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
                     }
                 }
-            }
-        }
 
-        .container-objective {
-            position: absolute;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 30%;
-            height: 100%;
-            background-color: $fourth-color;
-            color: wheat;
-            overflow: hidden;
-
-            .list-objective {
-                border: solid rgb(0, 238, 255);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-                gap: 30px;
-                flex-wrap: nowrap;
-                transform: rotate(-90deg);
-
-                .objective {
+                .container-btn-contact{
                     display: flex;
-                    flex-wrap: nowrap;
-                    width: 100px;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 20px;
+                    width: 100%;
+
+                    .btn-contact-modal{
+                        display: block;
+                        border: solid 2px $tirth-color;
+                        font-family: $secundary-Font;
+                        font-style: italic;
+                        font-weight: 900;
+                        padding: 5px 20px;
+                    }
                 }
             }
         }
+    }
+
+    .container-info-first-page {
+        display: flex;
+        width: 75%;
+        border: SOLID rgb(255, 0, 255);
     }
 }
