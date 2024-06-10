@@ -116,7 +116,6 @@
 }
 .first-page .container-info-first-page .theme {
   position: absolute;
-  background-color: red;
   top: 60px;
   right: 60px;
 }
@@ -169,7 +168,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 2px solid;
+  border-right: 2px solid #201e27;
   padding: 30px;
   width: 100%;
   height: 100%;
@@ -183,8 +182,8 @@
   right: -9px;
   width: 14px;
   height: 14px;
-  border-right: 2px solid;
-  border-bottom: 2px solid;
+  border-right: 2px solid #201e27;
+  border-bottom: 2px solid #201e27;
   transform: rotate(45deg);
 }
 .first-page .container-info-first-page .container-menu-main .menu-main .menu-list-main .menu-item-main {
@@ -266,19 +265,47 @@ input {
   }
 }
 .first-page .dark-container-profile-first-page {
-  background-color: #201e27;
+  background-color: #110f16;
 }
 .first-page .dark-container-profile-first-page .dark-profile-box {
-  background-color: #7b75ad;
+  background-color: #4ed1ad;
 }
 .first-page .dark-container-profile-first-page .dark-container-objective {
-  background-color: #4ed1ad;
+  background-color: #7b75ad;
 }
 .first-page .dark-container-profile-first-page .dark-container-objective .dark-list-objective {
   color: #000000;
 }
 .first-page .dark-container-info-first-page {
-  background-color: #000000;
+  background-color: #201e27;
+}
+.first-page .dark-container-info-first-page .sobre .dark-sobre-title {
+  color: #7b75ad;
+}
+.first-page .dark-container-info-first-page .sobre .dark-sobre-description {
+  color: #dddddd;
+  border-left: solid #7b75ad;
+}
+.first-page .dark-container-info-first-page .sobre .dark-sobre-description .dark-strong-description {
+  color: #000000;
+  background-color: #4ed1ad;
+}
+.first-page .dark-container-info-first-page .sobre .dark-close-tag {
+  color: #7b75ad;
+}
+.first-page .dark-container-info-first-page .container-menu-main .menu-main .dark-menu-list-main {
+  border-right: 2px solid #7b75ad;
+}
+.first-page .dark-container-info-first-page .container-menu-main .menu-main .dark-menu-list-main::after {
+  border-right: 2px solid #7b75ad;
+  border-bottom: 2px solid #7b75ad;
+}
+.first-page .dark-container-info-first-page .container-menu-main .menu-main .dark-menu-list-main .dark-menu-item-main {
+  color: #7b75ad;
+  border-bottom: 2px solid #7b75ad;
+}
+.first-page .dark-container-info-first-page .container-menu-main .menu-main .dark-menu-list-main .dark-menu-item-main:hover {
+  color: #4ed1ad;
 }
 
 html,

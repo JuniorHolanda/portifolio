@@ -1,23 +1,62 @@
-.first-page{
-    .dark-container-profile-first-page{
-        background-color: $fourth-color;
-    
-        .dark-profile-box{
-        background-color: $first-color;
+.first-page {
+  .dark-container-profile-first-page {
+    background-color: $special-color;
+
+    .dark-profile-box {
+      background-color: $second-color;
+    }
+
+    .dark-container-objective {
+      background-color: $first-color;
+
+      .dark-list-objective {
+        color: $tirth-color;
+      }
+    }
+  }
+
+  .dark-container-info-first-page {
+    background-color: $fourth-color;
+
+    .sobre {
+      .dark-sobre-title {
+        color: $first-color;
+      }
+
+      .dark-sobre-description {
+        color: $fifth-color;
+        border-left: solid $first-color;
+
+        .dark-strong-description {
+          color: $tirth-color;
+          background-color: $second-color;
         }
+      }
 
-        .dark-container-objective{
-            background-color: $second-color;
+      .dark-close-tag {
+        color: $first-color;
+      }
+    }
+    .container-menu-main {
+      .menu-main {
+        .dark-menu-list-main {
+          border-right: 2px solid $first-color;
 
-            .dark-list-objective{
-                color: $tirth-color;
+          &::after {
+            border-right: 2px solid $first-color;
+            border-bottom: 2px solid $first-color;
+          }
+
+          .dark-menu-item-main {
+            color: $first-color;
+            border-bottom: 2px solid $first-color;
+
+            &:hover {
+              color: $second-color;
             }
+          }
         }
-
+      }
     }
-
-    .dark-container-info-first-page{
-        background-color: $tirth-color;
-    }
-
+  }
 }
