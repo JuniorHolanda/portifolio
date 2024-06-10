@@ -1,3 +1,7 @@
+.first-page *{
+  transition: .3s;
+}
+
 .first-page {
   .dark-container-profile-first-page {
     background-color: $special-color;

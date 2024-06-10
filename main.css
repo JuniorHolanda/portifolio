@@ -264,6 +264,10 @@ input {
     opacity: 1;
   }
 }
+.first-page * {
+  transition: 0.3s;
+}
+
 .first-page .dark-container-profile-first-page {
   background-color: #110f16;
 }
@@ -306,6 +310,43 @@ input {
 }
 .first-page .dark-container-info-first-page .container-menu-main .menu-main .dark-menu-list-main .dark-menu-item-main:hover {
   color: #4ed1ad;
+}
+
+.change-theme {
+  opacity: 0;
+  position: absolute;
+}
+
+.change-theme:checked + .theme-label .btn-square {
+  transform: translateX(24px);
+}
+
+.theme-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5px;
+  background-color: #000000;
+  cursor: pointer;
+  position: relative;
+  height: 26px;
+  width: 50px;
+}
+.theme-label .fa-sun {
+  color: #4ed1ad;
+}
+.theme-label .fa-moon {
+  color: #7b75ad;
+}
+.theme-label .btn-square {
+  background-color: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: 0.2s linear;
 }
 
 html,
