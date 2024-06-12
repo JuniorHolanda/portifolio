@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://use.typekit.net/bie6gfv.css");
 .first-page {
-  display: flex;
+  display: grid;
+  grid-template-columns: 30% 70%;
   width: 100%;
   height: 100vh;
 }
 .first-page .container-profile-first-page {
+  border: red solid;
   position: relative;
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 25%;
+  width: 100%;
   background-color: #7b75ad;
 }
 .first-page .container-profile-first-page .profile-box {
+  border: solid hotpink;
   z-index: 1;
   position: absolute;
   transform: translate(-50%);
@@ -22,34 +25,32 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  padding: 40px;
+  padding: 10%;
   width: 70%;
-  height: auto;
+  height: 50vh;
   opacity: 0;
   animation: entrace-profile 1.3s 0.5s forwards;
 }
 .first-page .container-profile-first-page .profile-box .card-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  align-items: center;
+  border: solid blue;
+  display: grid;
+  grid-template-rows: 80% 20%;
   width: 100%;
   height: 100%;
-  border: solid 4px #000000;
 }
 .first-page .container-profile-first-page .profile-box .card-img .container-img {
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .first-page .container-profile-first-page .profile-box .card-img .container-img .img-profile {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 .first-page .container-profile-first-page .profile-box .card-img .container-btn-contact {
   display: flex;
@@ -105,14 +106,16 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 60px;
-  width: 75%;
+  padding: 5%;
+  height: 100%;
+  width: 100%;
   background-color: #dddddd;
 }
 .first-page .container-info-first-page .halftone {
   position: absolute;
   top: 60px;
   left: 60px;
+  width: 40%;
 }
 .first-page .container-info-first-page .theme {
   position: absolute;
@@ -120,25 +123,26 @@
   right: 60px;
 }
 .first-page .container-info-first-page .sobre {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+  display: grid;
+  grid-template: auto/10% 90%;
+  width: 60%;
   z-index: 1;
   opacity: 0;
   animation: entrace-fade-in-top 1.3s 1s forwards;
 }
 .first-page .container-info-first-page .sobre .sobre-title {
+  grid-area: 1/1/2/3;
   font-family: "thrillers", sans-serif;
-  font-size: 12rem;
+  font-size: 10vw;
   font-weight: 400;
 }
 .first-page .container-info-first-page .sobre .sobre-description {
-  margin-left: 30px;
-  padding-left: 30px;
+  grid-area: 2/2/3/3;
+  padding: 5%;
   border-left: solid #000000;
   font-family: "JetBrains Mono", monospace;
-  font-size: 1rem;
-  line-height: 25px;
+  font-size: calc(0.5em + 0.5vw);
+  line-height: 3vh;
 }
 .first-page .container-info-first-page .sobre .sobre-description strong {
   font-weight: 900;
@@ -146,15 +150,16 @@
   background-color: #4ed1ad;
 }
 .first-page .container-info-first-page .sobre .close-tag {
+  grid-area: 3/1/4/3;
   font-family: "thrillers", sans-serif;
-  font-size: 12rem;
+  font-size: 10vw;
   font-weight: 400;
 }
 .first-page .container-info-first-page .container-menu-main {
   position: absolute;
   bottom: 60px;
   right: 60px;
-  height: 40%;
+  height: 30vh;
   width: 30%;
   text-align: right;
 }
@@ -191,7 +196,7 @@
   justify-content: end;
   align-items: center;
   font-family: "JetBrains Mono", monospace;
-  font-size: 1vw;
+  font-size: calc(0.5em + 0.5vw);
   font-style: italic;
   font-weight: 900;
   cursor: pointer;
