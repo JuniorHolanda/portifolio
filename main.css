@@ -7,7 +7,6 @@
   height: 100vh;
 }
 .first-page .container-profile-first-page {
-  border: red solid;
   position: relative;
   display: flex;
   justify-content: end;
@@ -16,7 +15,6 @@
   background-color: #7b75ad;
 }
 .first-page .container-profile-first-page .profile-box {
-  border: solid hotpink;
   z-index: 1;
   position: absolute;
   transform: translate(-50%);
@@ -32,14 +30,12 @@
   animation: entrace-profile 1.3s 0.5s forwards;
 }
 .first-page .container-profile-first-page .profile-box .card-img {
-  border: solid blue;
   display: grid;
   grid-template-rows: 80% 20%;
   width: 100%;
   height: 100%;
 }
 .first-page .container-profile-first-page .profile-box .card-img .container-img {
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
