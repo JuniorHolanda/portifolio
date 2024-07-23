@@ -356,7 +356,6 @@ input {
   height: 100vh;
 }
 .second-page .wrapper-left {
-  border: solid rgb(218, 32, 119);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -367,9 +366,9 @@ input {
 .second-page .wrapper-left .container-info {
   display: grid;
   grid-template: auto/1fr 1fr 1fr;
-  border: solid red;
   width: 70%;
   height: 70%;
+  gap: 30px;
 }
 .second-page .wrapper-left .container-info .title-container-info {
   grid-area: 1/1/2/4;
@@ -379,6 +378,25 @@ input {
 }
 .second-page .wrapper-left .container-info .description-container-info {
   grid-area: 2/1/3/4;
+  font-family: "JetBrains Mono", monospace;
+  font-size: calc(0.5em + 0.5vw);
+  line-height: 3vh;
+}
+.second-page .wrapper-left .container-info .anchor-container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #201e27;
+  border: solid #201e27;
+  font-size: calc(0.5em + 0.5vw);
+  height: 30px;
+}
+.second-page .wrapper-left .container-info .anchor-container-info a {
+  font-family: "JetBrains Mono", monospace;
+  color: #201e27;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
 }
 .second-page .wrapper-right {
   border: solid goldenrod;

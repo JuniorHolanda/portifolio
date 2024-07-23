@@ -4,7 +4,6 @@
     height: 100vh;
 
     .wrapper-left{
-        border: solid rgb(218, 32, 119);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,9 +14,9 @@
         .container-info{
             display: grid;
             grid-template: auto / 1fr 1fr 1fr;
-            border: solid red;
             width: 70%;
             height: 70%;
+            gap: 30px;
 
             .title-container-info{
                 grid-area: 1/1/2/4;
@@ -28,6 +27,29 @@
 
             .description-container-info{
                 grid-area: 2/1/3/4;
+                font-family: $secundary-font;
+                font-size: calc(0.5em + 0.5vw);
+                line-height: 3vh;
+            }
+
+            .anchor-container-info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                color: $fourth-color;
+                border: solid $fourth-color;
+                font-size: calc(0.5em + 0.5vw);
+                height: 30px;
+                
+                a{
+                    font-family: $secundary-font;
+                    color: $fourth-color;
+                    font-family: $secundary-font;
+                    font-weight: 400;
+                    
+                }
+
             }
 
 
