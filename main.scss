@@ -6,17 +6,19 @@
 @import 'assets/style/first-page';
 @import 'assets/style/reset';
 @import 'assets/style/variable';
-@import'assets/style/animation';
+@import 'assets/style/animation';
 @import 'assets/style/dark-theme';
-@import'assets/style/btn-theme';
+@import 'assets/style/btn-theme';
+@import 'assets/style/second-page';
 
-
-html,
+.html{
+    width: 100vw;
+}
 body,
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
