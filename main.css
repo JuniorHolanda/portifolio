@@ -399,11 +399,15 @@ input {
   font-weight: 400;
 }
 .second-page .wrapper-right {
-  border: solid goldenrod;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100%;
   background-color: #201e27;
+}
+.second-page .wrapper-right .card-studioBrin {
+  background-color: #7b75ad;
 }
 
 .html {
