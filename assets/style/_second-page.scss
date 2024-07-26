@@ -41,15 +41,16 @@
                 border: solid $fourth-color;
                 font-size: calc(0.5em + 0.5vw);
                 height: 30px;
-                
-                a{
-                    font-family: $secundary-font;
-                    color: $fourth-color;
-                    font-family: $secundary-font;
-                    font-weight: 400;
-                    
-                }
+                font-size: .9rem;
+                cursor: pointer;
+                transition: .3s;
 
+                &:hover{
+                    transition: .3s;
+                    background-color: $fourth-color;
+                    border: none;
+                    color: $first-color;
+                }
             }
 
 

@@ -391,12 +391,15 @@ input {
   border: solid #201e27;
   font-size: calc(0.5em + 0.5vw);
   height: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.second-page .wrapper-left .container-info .anchor-container-info a {
-  font-family: "JetBrains Mono", monospace;
-  color: #201e27;
-  font-family: "JetBrains Mono", monospace;
-  font-weight: 400;
+.second-page .wrapper-left .container-info .anchor-container-info:hover {
+  transition: 0.3s;
+  background-color: #201e27;
+  border: none;
+  color: #7b75ad;
 }
 .second-page .wrapper-right {
   display: flex;
