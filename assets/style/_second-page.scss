@@ -65,7 +65,46 @@
         background-color: $fourth-color;
 
         .card-studioBrin{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            gap: 20px;
             background-color: $first-color;
+            height: auto;
+            width: 40%;
+
+            .gif-studiBrin{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .icon-wrapper-right{
+                position: relative;
+                display: flex;
+                padding-top: 30px;
+                gap: 20px;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .icon-toos{
+                    width: 35px;
+                }
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $fourth-color;
+
+                }
+            }
         }
+
     }
 }
