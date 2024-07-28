@@ -1,0 +1,17 @@
+.tooltip {
+    display: block; /* Altere para block se não precisar de flexbox */
+    width: 300px;
+    height: 300px;
+    background-color: $fourth-color;
+    color: red;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.tooltip-visible {
+    display: block; /* Altere para block se não precisar de flexbox */
+    opacity: 1;
+}

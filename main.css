@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://use.typekit.net/bie6gfv.css");
 .first-page {
@@ -444,6 +445,24 @@ input {
   width: 100%;
   height: 3px;
   background-color: #201e27;
+}
+
+.tooltip {
+  display: block; /* Altere para block se não precisar de flexbox */
+  width: 300px;
+  height: 300px;
+  background-color: #201e27;
+  color: red;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip-visible {
+  display: block; /* Altere para block se não precisar de flexbox */
+  opacity: 1;
 }
 
 .html {
