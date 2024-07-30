@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 @import url("https://use.typekit.net/bie6gfv.css");
 .first-page {
@@ -435,9 +434,6 @@ input {
   justify-content: space-between;
   width: 100%;
 }
-.second-page .wrapper-right .card-studioBrin .icon-wrapper-right .icon-toos {
-  width: 35px;
-}
 .second-page .wrapper-right .card-studioBrin .icon-wrapper-right::before {
   content: "";
   position: absolute;
@@ -447,22 +443,19 @@ input {
   background-color: #201e27;
 }
 
+.tooltip-target {
+  display: flex;
+  position: relative;
+  width: 35px;
+}
+
 .tooltip {
-  display: block; /* Altere para block se não precisar de flexbox */
-  width: 300px;
-  height: 300px;
-  background-color: #201e27;
-  color: red;
-  padding: 5px 10px;
-  font-size: 0.9em;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
+  display: none;
 }
 
 .tooltip-visible {
-  display: block; /* Altere para block se não precisar de flexbox */
-  opacity: 1;
+  position: absolute;
+  display: block;
 }
 
 .html {
@@ -476,4 +469,5 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  z-index: 10;
 }/*# sourceMappingURL=main.css.map */
