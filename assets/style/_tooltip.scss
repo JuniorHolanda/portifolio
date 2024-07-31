@@ -1,15 +1,70 @@
-.tooltip-target{
-    display: flex;
+// tooltip second page
+
+.icon-wrapper-right{
     position: relative;
-    width: 35px;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    width: 100%;
+    height: 90px;
 
-.tooltip{
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $fourth-color;
+    }
+
+    .card-tooltip{
+        position: relative;
+        display: flex;
+        width: 35px;
+        height: 100%;
     
-    display: none;
-}
+    }
+    .tooltip-target{
+        display: flex;
+        align-items: flex-start;   
+        width: 100%;
+    }
+    
+    .tooltip{
+        display: none;
+    }
 
-.tooltip-visible{
-    position: absolute;
-    display: block;
+    .title-tooltip-visible{
+        display: flex;
+        font-family: $secundary-font;
+        font-size: 0.7em;
+        text-align: center;
+        width: 200px;
+        padding: 20px;
+        position: absolute;
+        display: block;
+        bottom: 120%;
+        background-color: $tirth-color;
+        color: $second-color;
+        z-index: 1;
+    }
+    
+    .tooltip-visible{
+        display: flex;
+        font-family: $secundary-font;
+        font-size: 0.7em;
+        text-align: center;
+        width: 200px;
+        padding: 20px;
+        position: absolute;
+        display: block;
+        bottom: 120%;
+        background-color: $tirth-color;
+        color: $second-color;
+        z-index: 1;
+    }
+
+
 }

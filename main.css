@@ -420,21 +420,25 @@ input {
   width: 40%;
 }
 .second-page .wrapper-right .card-studioBrin .gif-studiBrin {
+  border: solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 70%;
 }
-.second-page .wrapper-right .card-studioBrin .icon-wrapper-right {
+
+.icon-wrapper-right {
   position: relative;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 30px;
   gap: 20px;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
+  height: 90px;
 }
-.second-page .wrapper-right .card-studioBrin .icon-wrapper-right::before {
+.icon-wrapper-right::before {
   content: "";
   position: absolute;
   top: 0;
@@ -442,20 +446,47 @@ input {
   height: 3px;
   background-color: #201e27;
 }
-
-.tooltip-target {
-  display: flex;
+.icon-wrapper-right .card-tooltip {
   position: relative;
+  display: flex;
   width: 35px;
+  height: 100%;
 }
-
-.tooltip {
+.icon-wrapper-right .tooltip-target {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.icon-wrapper-right .tooltip {
   display: none;
 }
-
-.tooltip-visible {
+.icon-wrapper-right .title-tooltip-visible {
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7em;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
   position: absolute;
   display: block;
+  bottom: 120%;
+  background-color: #000000;
+  color: #4ed1ad;
+  z-index: 1;
+}
+.icon-wrapper-right .tooltip-visible {
+  display: flex;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7em;
+  text-align: center;
+  width: 200px;
+  padding: 20px;
+  position: absolute;
+  display: block;
+  bottom: 120%;
+  background-color: #000000;
+  color: #4ed1ad;
+  z-index: 1;
 }
 
 .html {

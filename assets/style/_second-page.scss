@@ -52,8 +52,6 @@
                     color: $first-color;
                 }
             }
-
-
         }
     }
 
@@ -76,32 +74,13 @@
             width: 40%;
 
             .gif-studiBrin{
+                        border: solid red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-            }
-
-            .icon-wrapper-right{
-                position: relative;
-                display: flex;
-                padding-top: 30px;
-                gap: 20px;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                    height: 3px;
-                    background-color: $fourth-color;
-
-                }
+                height: 70%;
             }
         }
-
     }
 }
