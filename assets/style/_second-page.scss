@@ -70,16 +70,13 @@
             padding: 30px;
             gap: 20px;
             background-color: $first-color;
-            height: auto;
             width: 40%;
 
-            .gif-studiBrin{
-                        border: solid red;
+            .gif-studioBrin{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-                height: 70%;
             }
         }
     }

@@ -25,46 +25,60 @@
         width: 35px;
         height: 100%;
     
-    }
-    .tooltip-target{
-        display: flex;
-        align-items: flex-start;   
-        width: 100%;
-    }
-    
-    .tooltip{
-        display: none;
-    }
+        .tooltip-target{
+            display: flex;
+            align-items: flex-start;   
+            width: 100%; 
+        }
 
-    .title-tooltip-visible{
-        display: flex;
-        font-family: $secundary-font;
-        font-size: 0.7em;
-        text-align: center;
-        width: 200px;
-        padding: 20px;
-        position: absolute;
-        display: block;
-        bottom: 120%;
-        background-color: $tirth-color;
-        color: $second-color;
-        z-index: 1;
-    }
-    
-    .tooltip-visible{
-        display: flex;
-        font-family: $secundary-font;
-        font-size: 0.7em;
-        text-align: center;
-        width: 200px;
-        padding: 20px;
-        position: absolute;
-        display: block;
-        bottom: 120%;
-        background-color: $tirth-color;
-        color: $second-color;
-        z-index: 1;
-    }
+        .alert-tooltip {
+            position: absolute;
+            top: 0;
+            left: 90%;
+            font-size: .7em;
+            color: $second-color;
+        }
 
+        .container-tooltip , .visible-container-tooltip {
+            position: absolute;
+            transform: translate(0px);
+            bottom: 110%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 5px;
+            width: 200px;
+            color: $second-color;
+            background-color: $tirth-color;
 
+            h3 {
+                font-family: $secundary-font;
+                font-size: 1em;
+
+            }
+
+            .separador-tooltip{
+                border-color: $second-color;
+            }
+
+            p {
+                font-family: $secundary-font;
+                font-size: .7em;
+            }
+        }
+        
+        .container-tooltip{
+            display: flex;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .visible-container-tooltip{
+            opacity: 1;
+            visibility: visible;
+            transition: 0.3s;
+            z-index: 1;
+        }
+    }
 }
