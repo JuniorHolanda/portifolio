@@ -348,13 +348,6 @@ input {
   align-items: flex-start;
   width: 100%;
 }
-.icon-wrapper-right .card-tooltip .alert-tooltip {
-  position: absolute;
-  top: 0;
-  left: 90%;
-  font-size: 0.7em;
-  color: #4ed1ad;
-}
 .icon-wrapper-right .card-tooltip .container-tooltip, .icon-wrapper-right .card-tooltip .visible-container-tooltip {
   position: absolute;
   transform: translate(0px);
