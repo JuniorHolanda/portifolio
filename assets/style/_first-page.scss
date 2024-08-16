@@ -74,39 +74,6 @@
         }
       }
     }
-
-    .container-objective {
-      right: 0;
-      z-index: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 20%;
-      height: 100%;
-      background-color: $fourth-color;
-      //overflow: hidden;
-
-      .list-objective {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        color: $second-color;
-        gap: 30px;
-        font-family: $secundary-font;
-        font-weight: 600;
-        transform: rotate(-90deg);
-        width: 100vh;
-
-        .objective {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 13vw;
-          letter-spacing: 2px;
-        }
-      }
-    }
   }
 
   .container-info-first-page {

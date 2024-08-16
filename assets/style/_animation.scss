@@ -29,3 +29,13 @@
         opacity: 1;
     }
 }
+
+//carrossel front-end firstpage
+@keyframes scroll-vertical-to-top {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
